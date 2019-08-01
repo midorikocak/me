@@ -1,3 +1,6 @@
+<?php
+require('data/data.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,7 +11,7 @@
   <body>
     <h1>Contact</h1>
 
-    <form method="POST" action="https://formspree.io/mtkocak@gmail.com">
+    <form method="POST" action="https://formspree.io/<?= $email ?>">
       <label for="name">First Name</label>
       <input type="text" name="name"  placeholder="Your name">
 
